@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+/* Dark theme base */
+:root {
+  --background: #FFFFFF;
+  --foreground: #141413;
+  --accent-coral: #D97757;
+  --accent-black: #141413;
+}
+
+html, body {  
+  height: 100%;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Inter, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom scrollbar for brand theme */
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(20, 20, 19, 0.2);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(217, 119, 87, 0.4);
+}
+
+/* Smooth transitions globally */
+* {
+  transition-property: color, background-color, border-color, opacity;
+  transition-duration: 150ms;
+}
